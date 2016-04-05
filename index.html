@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="classApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro to Angular - Geekwise Academy</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="mainContainer" ng-controller="linkList">
+    <h1 class="welcome">{{welcome}}</h1>
+    <p class="description">{{class.description}}</p>
+    <div class="classList" ng-repeat="info in info">
+      <a href="{{info.link}}" target="_blank">{{info.title}}</a><br>
+
+    </div>
+
+  </div>
+
+
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+  <script src="snippets.js"></script>
+</body>
+</html>
